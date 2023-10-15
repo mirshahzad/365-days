@@ -30,3 +30,29 @@ class Library:
     def return_book(self, returned_book):
          self.books[returned_book] = 'Free'
          print(f'Thank you for returning {returned_book}')
+
+# Creating a class named Student
+class Student:
+    def __init__(self, name, library):
+        self.name = name
+        self.books = []
+        self.library = library
+
+    def view_borrowed(self):
+        if not self.books:
+            print("You haven't borrowed any books")
+        else:
+            for book in self.books:
+                print(book)
+    def request_book(self):
+        book = input(
+            "Enter the name of the book you'd like to borrow!")
+        if self.library.lend_book(book, self.name):
+            self.books.append(book)
+    def return_book(self):
+        book = input(
+            "Enter the name of the book you'd like to return!")
+        if book in self.books:
+            self.library.return_book(book)
+        else:
+            print("You haven't borrowed that book try another...")
