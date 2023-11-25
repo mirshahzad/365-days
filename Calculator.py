@@ -44,7 +44,7 @@ while True:
         elif choice == '4':
             print(num1, "/", num2, "=", divide(num1, num2))
         
-        # Checking if user want another calculation
+        # Checking if user wants another calculation
         # Breaking the while loop if answer is NO
         next_calculation = input("Let's do next calculation? (Please write Yes/No): ")
         if next_calculation == "No":
