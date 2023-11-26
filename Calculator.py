@@ -1,9 +1,8 @@
-
-# This function is adding two numbers
+# This function adds two numbers
 def add(x, y):
     return x + y
 
-# This function is subtracting two numbers
+# This function subtracts two numbers
 def subtract(x, y):
     return x - y
 
@@ -44,8 +43,8 @@ while True:
         elif choice == '4':
             print(num1, "/", num2, "=", divide(num1, num2))
         
-        # Checking if user wants another calculation
-        # Breaking the while loop if answer is NO
+        # Checking if a user wants another calculation
+        # Breaking the while loop if the answer is No
         next_calculation = input("Let's do next calculation? (Please write Yes/No): ")
         if next_calculation == "No":
             break
