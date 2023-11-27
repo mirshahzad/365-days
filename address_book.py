@@ -1,5 +1,4 @@
 # This program enters the contact details to save in a list
-#!/usr/bin/env python3
 
 # Importing modules
 import tkinter as tk
@@ -13,6 +12,7 @@ class AddressBookApp(tk.Frame):
         self.pack()
         self._create_widgets()
 
+    # Defining function
     def _create_widgets(self):
         tree_view_entries = ["Entry 1", "Entry 2",
                    "Entry 3", "Entry 4"]
@@ -24,7 +24,7 @@ class AddressBookApp(tk.Frame):
         treeview_widget.pack()
         self._create_menus()
 
-    
+    # Defining function
     def _create_menus(self):
         menu_widget = tk.Menu(self.master)
         file_menu = tk.Menu(menu_widget)
